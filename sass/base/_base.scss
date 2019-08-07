@@ -6,26 +6,17 @@
 *,
 *::before,
 *::after {
-
-
   box-sizing: inherit;
 }
 
-
-
-
-
-
-
-
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 
   font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
 
   @media only screen and (max-width: 600px) {
     font-size: 50%;
-
   }
 }
 
