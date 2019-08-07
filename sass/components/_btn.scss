@@ -1,21 +1,74 @@
 .btn {
-    border-radius: 2%;
+  border-radius: 2%;
+  box-shadow: 0 1rem 2rem rgba(black, 0.2);
+
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+
+
+  &:hover {
+    transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(black, 0.2);
-    
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+    &::before{
+      
+      opacity: 0.1;
+      height: 100%;
+      width: 100%;
+
+  
+    }
+  }
+
+  &::before{
+    content: "";
+    display: inline-block;
+    background-color: lightpink;
+    opacity: 0;
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: all 0.2s;
+
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+
   &--white {
     padding: 1rem 6rem;
     background-color: white;
     color: $color-secondary;
-    
+    animation: pulsate 1s infinite;
   }
-  &--pink{
+  &--pink {
     background-color: $color-primary;
     color: white;
     padding: 1.5rem 7rem;
   }
-  &--small{
+  &--small {
     border: none;
     padding: 1.5rem 5rem;
+    animation: pulsate 1s infinite;
   }
 }
-
