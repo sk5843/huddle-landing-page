@@ -57,6 +57,9 @@
 
   &--white {
     padding: 1rem 6rem;
+    @media only screen and (max-width: 600px) {
+      padding: 1rem 4rem;
+    }
     background-color: white;
     color: $color-secondary;
     animation: pulsate 1s infinite;
@@ -65,10 +68,14 @@
     background-color: $color-primary;
     color: white;
     padding: 1.5rem 7rem;
+    @media only screen and (max-width: 600px) {
+      padding: 1.5rem 5rem;
+    }
   }
   &--small {
     border: none;
     padding: 1.5rem 5rem;
     animation: pulsate 1s infinite;
+    
   }
 }

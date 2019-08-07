@@ -4,6 +4,13 @@
     grid-column-gap: 10rem;
     padding: 12rem;
     margin-top: 30rem;
+    width: 100vw;
+    @media only screen and (max-width: 600px) {
+        margin-top: 7rem;
+        grid-row-gap: 10rem;
+        text-align: center;
+        padding: 6rem;
+      }
     &__illustration{
         width: 100%;
     }
@@ -12,5 +19,8 @@
         display: grid;
         align-items: center;
         grid-row-gap: 4rem;
+        @media only screen and (max-width: 600px) {
+            grid-row-gap: 8rem;
+          }
     }
 }

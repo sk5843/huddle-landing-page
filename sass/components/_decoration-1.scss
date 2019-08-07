@@ -5,5 +5,8 @@
   border-radius: 8%;
   transform: translateX(650px) translateY(-350px) rotate(50deg);
   z-index: -1;
+  @media only screen and (max-width:600px){
+    transform: translateX(300px) translateY(-100px) rotate(-33deg);
+  }
 
 }

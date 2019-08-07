@@ -6,12 +6,11 @@
     text-align: center;
     grid-column: 1/-1;
     grid-row: 2/3;
+    width: 100vw;
+    @media only screen and (max-width: 600px) {
+        padding: 5rem;
     
-
-
-
-    
-
+      }
     &__illustration{
         width: 90%;
     }

@@ -14,6 +14,7 @@
     &--cta{
         font-family: $font-heading;
         
+        
     }
     &--wide{
         display: inline-block;
@@ -39,6 +40,10 @@
 .cta__heading{
     @extend .about__heading;
     font-size: 3rem;
+    @media only screen and (max-width: 600px) {
+        font-size: 2.4rem;
+        
+      }
 }
 
 .subscribe{
