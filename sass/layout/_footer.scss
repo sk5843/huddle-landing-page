@@ -1,0 +1,39 @@
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: $color-footer;
+    padding: 8rem;
+    grid-gap: 3.5rem;
+
+    &__socialmedia{
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: repeat(2, min-content) 180px;
+        grid-template-rows: repeat(2, min-content);
+        color: $color-neutral-1;
+        
+    }
+    
+}
+
+.list {
+        
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-column-gap: 10rem;
+        grid-row-gap: 1rem;
+        list-style: none;
+        color: $color-neutral-1;
+        font-family: $font-body;
+
+}
+
+.subscribe{
+    
+    &__inputfield{
+        border: none;
+        padding: 1.5rem;
+        border-radius: 2%;
+        width: 100%;
+    }
+}

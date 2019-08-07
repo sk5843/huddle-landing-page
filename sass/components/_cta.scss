@@ -1,0 +1,12 @@
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25rem;
+  &__box {
+    display: inline-block;
+    padding: 6rem 7rem 10rem 7rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+  }
+}

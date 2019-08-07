@@ -1,0 +1,16 @@
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-column-gap: 10rem;
+    padding: 12rem;
+    margin-top: 30rem;
+    &__illustration{
+        width: 100%;
+    }
+
+    &__descriptionbox{
+        display: grid;
+        align-items: center;
+        grid-row-gap: 4rem;
+    }
+}

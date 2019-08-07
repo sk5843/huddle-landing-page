@@ -1,0 +1,19 @@
+//COLORS
+
+//PRIMARY
+
+$color-primary: hsl(322, 100%, 66%);
+$color-secondary: hsl(265, 100%, 66%);
+$color-footer: hsl(192, 100%, 9%);
+
+//GRADIENTS
+$gradient-primary: linear-gradient(to right, $color-primary, $color-secondary);
+
+//NEUTRALS
+$color-neutral-1: hsl(214, 64%, 98%);
+$color-neutral-2: hsl(208, 11%, 55%);
+
+//FONTS
+$font-heading: "Poppins";
+$font-body: "Open Sans";
+

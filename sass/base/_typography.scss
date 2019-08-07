@@ -1,0 +1,55 @@
+.btn{
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-family: $font-heading;
+    font-weight: 400;
+}
+
+.text{
+    font-family: $font-body;
+    font-weight: 400;
+    color: $color-neutral-2;
+    line-height: 1.5;
+
+    &--cta{
+        font-family: $font-heading;
+        
+    }
+    &--wide{
+        display: inline-block;
+        grid-column: 1 /-1;
+    }
+}
+
+.main__heading{
+    font-family: $font-heading;
+    font-weight: 700;
+    font-size: 3rem;
+    color: $color-footer;
+    
+}
+
+.about__heading{
+    font-family: $font-heading;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: $color-footer;
+}
+
+.cta__heading{
+    @extend .about__heading;
+    font-size: 3rem;
+}
+
+.subscribe{
+    &__heading{
+        font-family: $font-body;
+        font-weight:700;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        color: $color-neutral-1;
+    }
+    & > .text{
+        color: $color-neutral-1;
+    }
+}
